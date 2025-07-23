@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(139, 208, 211, 0.4);
+    line-height: 1.6;
+    
+    
+
+
+}
+h1 {
+    background-color: cadetblue;
+    margin: 0;
+    color: white;
+    padding: 50px;
+
+}
+h2{
+    color: cadetblue;
+    margin-top: 0px;
+    margin-bottom:0px ;
+}
+head {
+    background-color: cadetblue;
+}
+main {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+section {
+    background-color: #ffff;
+    padding:20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(139, 208, 211, 0.4);
+
+}
+img {
+    max-width: 100% ;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto
+
+}
+ul{
+    list-style-type: none;
+}
+
+p, li{
+    font-size: 1.2em;
+    color: #666;
+}
+footer {
+    background-color:  rgba(139, 208, 211, 1);
+    color: #ffff;
+    text-align:center;
+    
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.mail-link {
+    color: rgb(13, 68, 70);
+    text-decoration: none;
+}
