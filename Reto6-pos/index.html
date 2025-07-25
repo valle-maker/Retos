@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 8: Energías Limpias en el Mundo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Energías Limpias en el Mundo</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Solar</a></li>
+            <li><a href="#">Eólica</a></li>
+            <li><a href="#">Hidrógeno Verde</a></li>
+            <li><a href="#">Geotérmica</a></li>
+            <li><a href="#">Bioenergía</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-grid">
+        <main class="main-content">
+            <section class="energia" onclick="openModal('modal-solar')">
+                <h2>Solar</h2>
+                <img src="img/solar_urbano1.png" alt="Paneles solares en zonas urbanas">
+                <p>La energía solar es una de las formas más populares de energía limpia y se usa ampliamente en regiones soleadas como el Mediterráneo y partes de África.</p>
+            </section>
+
+            <section class="energia" onclick="openModal('modal-eolica')">
+                <h2>Eólica</h2>
+                <img src="img/parque_eolico.png" alt="Parque eólico en una colina">
+                <p>La energía eólica se genera utilizando turbinas que convierten el movimiento del viento en electricidad, siendo ideal para regiones como Europa del Norte y el centro de Estados Unidos.</p>
+            </section>
+
+            <section class="energia" onclick="openModal('modal-hidrogeno')">
+                <h2>Hidrógeno Verde</h2>
+                <img src="img/hidrogeno_verde.png" alt="Producción de hidrógeno verde">
+                <p>El hidrógeno verde se produce a partir de energía renovable y agua, y es una solución prometedora para el transporte limpio y la industria pesada, con potencial en zonas como Australia y el Golfo Pérsico.</p>
+            </section>
+
+            <section class="energia" onclick="openModal('modal-geotermica')">
+                <h2>Geotérmica</h2>
+                <img src="img/geotermia.png" alt="Planta geotérmica en Islandia">
+                <p>La energía geotérmica aprovecha el calor natural de la tierra para generar electricidad, siendo efectiva en países como Islandia y Nueva Zelanda.</p>
+            </section>
+
+            <section class="energia" onclick="openModal('modal-bioenergia')">
+                <h2>Bioenergía</h2>
+                <img src="img/bio_combustible.png" alt="Bioenergía en zonas rurales">
+                <p>La bioenergía se produce a partir de materia orgánica y tiene un gran potencial en zonas rurales de América Latina y Sudeste Asiático.</p>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal-solar" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-solar')">&times;</span>
+            <h2>Detalles sobre Energía Solar</h2>
+            <p>La energía solar es una de las formas de energía limpia más accesibles. Existen paneles solares para uso doméstico y aplicaciones industriales. En los últimos años, los costos de producción han bajado considerablemente, permitiendo un acceso más amplio.</p>
+        </div>
+    </div>
+
+    <div id="modal-eolica" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-eolica')">&times;</span>
+            <h2>Detalles sobre Energía Eólica</h2>
+            <p>La energía eólica es crucial para la transición hacia fuentes renovables. Los parques eólicos se encuentran en ubicaciones ventosas, como las zonas costeras y llanuras. Cada aerogenerador puede proporcionar electricidad suficiente para cientos de hogares.</p>
+        </div>
+    </div>
+
+    <div id="modal-hidrogeno" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-hidrogeno')">&times;</span>
+            <h2>Detalles sobre Hidrógeno Verde</h2>
+            <p>El hidrógeno verde tiene un gran potencial para reducir emisiones de carbono. Se utiliza como combustible limpio y puede almacenar energía a gran escala, complementando otras fuentes renovables como solar y eólica.</p>
+        </div>
+    </div>
+
+    <div id="modal-geotermica" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-geotermica')">&times;</span>
+            <h2>Detalles sobre Energía Geotérmica</h2>
+            <p>La energía geotérmica aprovecha el calor del interior de la tierra. Es muy estable y adecuada para generar electricidad de manera constante durante todo el año, lo que la hace ideal para satisfacer la demanda base.</p>
+        </div>
+    </div>
+
+    <div id="modal-bioenergia" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-bioenergia')">&times;</span>
+            <h2>Detalles sobre Bioenergía</h2>
+            <p>La bioenergía se obtiene de materia orgánica, como residuos agrícolas o forestales. Es una fuente de energía sostenible y puede ayudar a reducir los desechos mientras genera electricidad o combustibles limpios.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Creado por Julián Giraldo - ✉️<a href="mailto:julian.giraldoo@udea.edu.co" class="correo">julian.giraldoo@udea.edu.co</a> - Bootcamp Talento Tech Region 2 - 2024</p>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
