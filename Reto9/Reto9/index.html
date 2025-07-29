@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Visualización de Energías Renovables</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Visualización de Datos de Energías Renovables</h1>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#graficoPaises">Paises</a></li>
+        <li><a href="#graficoRegiones">Regiones</a></li>
+        <li><a href="#graficoComparativo">Evolución</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <section class="grafico" id="graficoPaises">
+        <h2>Top 20 Países con Mayor Producción de Energía Renovable</h2>
+        <canvas id="graficoBarrasPaises"></canvas>
+      </section>
+
+      <section class="grafico" id="graficoRegiones">
+        <h2>Producción de Energía Renovable por Regiones</h2>
+        <canvas id="graficoBarrasRegiones"></canvas>
+      </section>
+
+      <section class="grafico" id="graficoComparativo">
+        <h2>Comparativa de Producción de Energía Renovable - Colombia vs. Suramérica (1965 - 2021)</h2>
+        <canvas id="graficoLineasComparativa"></canvas>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Creado por Julián Giraldo - ✉️<a href="mailto:julian.giraldoo@udea.edu.co" class="correo">julian.giraldoo@udea.edu.co</a> - Bootcamp Talento Tech Region 2 - 2025
+      </p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
