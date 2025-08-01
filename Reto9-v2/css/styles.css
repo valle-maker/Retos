@@ -1,0 +1,88 @@
+body{
+    background-color: #eee;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    background-color: #006bb3;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.navbar{
+    background-color: #025b97;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration:  none;
+    transition: color 0.3;
+}
+
+.navbar ul li a:hover{
+    color: #84badf;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-content: space-evenly;
+    padding: 25px;
+}
+
+.grafico{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grafico h2{
+    text-align: center;
+    color: #006bb3;
+}
+
+canvas{
+    max-width: 100%;
+    min-width: 50%;
+    height: 80%;
+    display: grid;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.footer{
+    background-color: #006bb3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.email_link{
+    text-decoration: none;
+}
+

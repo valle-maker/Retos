@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Visualización de Energías Renovables</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Visualización de Datos de Energías Renovables</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#graficoBarrasPaises">Países</a></li>
+            <li><a href="#graficoBarrasRegiones">Regiones</a></li>
+            <li><a href="#graficoLineasComparativa">Evolución</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <section class="grafico" id="graficoPaises">
+            <h2>Top 20 de Países con Mayor Producción de Energía Renovable</h2>
+            <canvas id="graficoBarrasPaises"></canvas>
+        </section>
+
+        <section class="grafico" id="graficoRegiones">
+            <h2>Producción de Energía Renovable por Regiones</h2>
+            <canvas id="graficoBarrasRegiones"></canvas>
+        </section>
+
+        <section class="grafico" id="graficoComparativo">
+            <h2>Comparativa de Producción de Energía Renovable - Colombia vs. Suramérica (1965 - 2021)</h2>
+            <canvas id="graficoLineasComparativa"></canvas>
+        </section>
+    </div>
+    <footer class="footer">
+        Creado por Camilo Ramirez <a href="mailto:camilo.ramirezg@udea.edu.co" class = "email_link">camilo.ramirezg@udea.edu.co</a> -Bootcamp TalentoTech 2025-
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
